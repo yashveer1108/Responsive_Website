@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <h1>My Website</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="grid-layout">
+    <section class="form-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="error" class="error"></p>
+      </form>
+    </section>
+
+    <section class="todo-section">
+      <h2>To-Do List</h2>
+      <div class="todo-container">
+        <input type="text" id="taskInput" placeholder="New Task" />
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
