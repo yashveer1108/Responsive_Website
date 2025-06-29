@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>My Web Project</h1>
+    <ul class="nav-links">
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#todo">To-Do List</a></li>
+      <li><a href="#gallery">Image Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main class="grid-container">
+    <section id="contact" class="card">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name:<input type="text" id="name" required /></label>
+        <label>Email:<input type="email" id="email" required /></label>
+        <label>Message:<textarea id="message" required></textarea></label>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMessage" class="error"></p>
+    </section>
+
+    <section id="todo" class="card">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter new task" />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>Image Gallery</h2>
+      <input type="text" id="imgUrlInput" placeholder="Enter image URL" />
+      <button onclick="addImage()">Add Image</button>
+      <div id="imageGallery" class="gallery-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
